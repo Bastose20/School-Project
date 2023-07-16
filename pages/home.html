@@ -19,6 +19,16 @@
             background-position: center;
             background-size: cover;
             position: relative;
+            animation: inanaimate 20s infinite ease; 
+        }
+        @keyframes inanaimate{
+            0%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero2.png)}
+            20%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero3.png)}
+            40%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero4.png)}
+            60%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero5.png)}
+            80%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero6.png)}
+            100%{background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.3)),url(../assets/image/hero7.png)}
+
         }
         nav{
             display: flex;
@@ -44,7 +54,7 @@
             width: 0%;
             height: 2px;
             display: block;
-            background-color: #f44336;
+            background-color: #f47c00;
             transition: all 0.5s;
             margin: auto;
         }
@@ -79,7 +89,7 @@
         }
         .hero-content>a:hover{
             border-color: #f44336;
-            background-color: #f44336;
+            background-color: #f47c00;
         }
         nav #fa{
             display: none;
@@ -116,7 +126,7 @@
             }
             nav>.nav-links{
                 height: 100vh;
-                background-color: #f44336;
+                background-color: #f47c00;
                 position: absolute;
                 top: 0px;
                 right: 0px;
@@ -139,7 +149,7 @@
 <body>
     <header>
         <nav>
-            <a href=""><img src="../assets/image/logo/2.png" alt=""></a>
+            <a href=""><img src="../assets/image/logo/elitetech/8th-logo.png" alt=""></a>
             <div class="nav-links">
                 <i class="fa-solid fa-xmark" id="fa" onclick="hide_menu()"></i>
              <ul>
@@ -168,13 +178,34 @@
         </div>
     </header>
     <main>
+        <article id="courses" class="section-container">
+            <h1>Courses We Offer</h1>
+            <p>lorem20chhfh fyj hffjj j jjj j jjdruujd jd djjdd jd jjed ej jesj ssjwsws jjw  jws wswsjwsws jws 
+            </p>
+            <div class="row">
+                <div class="course-column">
+                    <h3>Intermediate</h3>
+                    <p>fdgbg  gswffqaq g ggdsrfswg gwsfwg ggwsfwt gwgwhy </p>
+                </div>
+                <div class="course-column">
+                    <h3>Degree</h3>
+                    <p>jdhfkh kgksghshs osshos sgvjosobs jjswoujows</p>
+                </div>
+                <div class="course-column">
+                    <h3>Post-Graduate</h3>
+                    <p>jdzfhkzhkf kzhfkzhv kbvzhkzhkz kzhkhkz khbkbhkzhk</p>
+                </div>
+
+            </div>
+        </article>
     </main>
     <footer></footer>
     <script>
         let nav_links=document.querySelector(".nav-links")
         console.log(nav_links);
         function display_menu() {
-            nav_links.style.maxWidth="200px"      
+            nav_links.style.maxWidth="100%"    
+            nav_links.style.width="200px"  
         }
         function hide_menu() {
             nav_links.style.maxWidth="0px"
